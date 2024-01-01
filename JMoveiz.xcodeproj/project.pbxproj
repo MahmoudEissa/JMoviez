@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C678AA12B407507009BB3F3 /* JZMovieAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AA02B407507009BB3F3 /* JZMovieAPIs.swift */; };
+		3C678AA42B40758C009BB3F3 /* JZPagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AA32B40758C009BB3F3 /* JZPagedObject.swift */; };
+		3C678AA62B407821009BB3F3 /* JZMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AA52B407821009BB3F3 /* JZMovie.swift */; };
+		3C678AA82B4079B2009BB3F3 /* JZNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AA72B4079B2009BB3F3 /* JZNetworkManager.swift */; };
+		3C678AAA2B407A5E009BB3F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AA92B407A5E009BB3F3 /* Constants.swift */; };
+		3C678AAD2B40842A009BB3F3 /* RealmExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AAC2B40842A009BB3F3 /* RealmExtensions.swift */; };
+		3C678AAF2B4084C2009BB3F3 /* PublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AAE2B4084C2009BB3F3 /* PublisherExtension.swift */; };
+		3C678AB82B409115009BB3F3 /* JZMoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AB72B409115009BB3F3 /* JZMoviesListViewModel.swift */; };
+		3C678ABA2B4092E8009BB3F3 /* JZMoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AB92B4092E8009BB3F3 /* JZMoviesListView.swift */; };
+		3C678ABE2B40B176009BB3F3 /* JZMoviesListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678ABD2B40B176009BB3F3 /* JZMoviesListService.swift */; };
+		3C678AC02B40B2FE009BB3F3 /* JZRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678ABF2B40B2FE009BB3F3 /* JZRealmManager.swift */; };
+		3C678AC22B40B8B9009BB3F3 /* JZMovieCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AC12B40B8B9009BB3F3 /* JZMovieCardView.swift */; };
+		3C678AC62B41874E009BB3F3 /* JZMoviesListAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AC52B41874E009BB3F3 /* JZMoviesListAPIService.swift */; };
+		3C678AC82B418769009BB3F3 /* JZMoviesListLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AC72B418769009BB3F3 /* JZMoviesListLocalService.swift */; };
+		3C678ACE2B418A09009BB3F3 /* ActivityProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678ACD2B418A09009BB3F3 /* ActivityProgressView.swift */; };
+		3C678AD02B418A28009BB3F3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678ACF2B418A28009BB3F3 /* SearchView.swift */; };
+		3C678AD22B418A64009BB3F3 /* HeaderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AD12B418A64009BB3F3 /* HeaderText.swift */; };
+		3C678AD42B418AF3009BB3F3 /* JZMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AD32B418AF3009BB3F3 /* JZMovieView.swift */; };
+		3C678AD92B418B88009BB3F3 /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AD82B418B88009BB3F3 /* ParallaxHeader.swift */; };
+		3C678ADC2B419505009BB3F3 /* JZNetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678ADB2B419505009BB3F3 /* JZNetworkReachability.swift */; };
+		3C678AE42B419BE9009BB3F3 /* JMoveizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AE32B419BE9009BB3F3 /* JMoveizTests.swift */; };
+		3C678AEB2B419CB6009BB3F3 /* JZMockNetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AEA2B419CB6009BB3F3 /* JZMockNetworkReachability.swift */; };
+		3C678AEF2B419DD9009BB3F3 /* JZBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AEE2B419DD9009BB3F3 /* JZBaseViewModel.swift */; };
+		3C678AF12B419E3E009BB3F3 /* JZErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AF02B419E3E009BB3F3 /* JZErrors.swift */; };
+		3C678AF32B41A148009BB3F3 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AF22B41A148009BB3F3 /* MockURLProtocol.swift */; };
+		3C678AF52B41A4D8009BB3F3 /* JZPagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AF42B41A4D8009BB3F3 /* JZPagerViewModel.swift */; };
+		3C678AF72B41A62D009BB3F3 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AF62B41A62D009BB3F3 /* DataExtensions.swift */; };
+		3C678AF92B41A808009BB3F3 /* PublisherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C678AF82B41A808009BB3F3 /* PublisherExtensions.swift */; };
+		3C678AFA2B41AAAD009BB3F3 /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C678AEC2B419D54009BB3F3 /* Response.json */; };
+		3C7E0C032B3EF50700C0004F /* JMoveizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E0C022B3EF50700C0004F /* JMoveizApp.swift */; };
+		3C7E0C072B3EF50900C0004F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E0C062B3EF50900C0004F /* Assets.xcassets */; };
+		CA24DE054382A54584AEBE54 /* Pods_JMoveiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC35BA7C4ABB8F8791A9D1BC /* Pods_JMoveiz.framework */; };
+		ED313EE773608D43299EBD7A /* Pods_JMoveizTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CD3E13CD9005D553E4A25E /* Pods_JMoveizTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C678AE52B419BE9009BB3F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C7E0BF72B3EF50700C0004F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C7E0BFE2B3EF50700C0004F;
+			remoteInfo = JMoveiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		354ACD57B78C43B6E4E23C7F /* Pods-JMoveizTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMoveizTests.release.xcconfig"; path = "Target Support Files/Pods-JMoveizTests/Pods-JMoveizTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C66786F2B4219BE000BD8A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3C678AA02B407507009BB3F3 /* JZMovieAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZMovieAPIs.swift; sourceTree = "<group>"; };
+		3C678AA32B40758C009BB3F3 /* JZPagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZPagedObject.swift; sourceTree = "<group>"; };
+		3C678AA52B407821009BB3F3 /* JZMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZMovie.swift; sourceTree = "<group>"; };
+		3C678AA72B4079B2009BB3F3 /* JZNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZNetworkManager.swift; sourceTree = "<group>"; };
+		3C678AA92B407A5E009BB3F3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3C678AAC2B40842A009BB3F3 /* RealmExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExtensions.swift; sourceTree = "<group>"; };
+		3C678AAE2B4084C2009BB3F3 /* PublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtension.swift; sourceTree = "<group>"; };
+		3C678AB72B409115009BB3F3 /* JZMoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZMoviesListViewModel.swift; sourceTree = "<group>"; };
+		3C678AB92B4092E8009BB3F3 /* JZMoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZMoviesListView.swift; sourceTree = "<group>"; };
+		3C678ABD2B40B176009BB3F3 /* JZMoviesListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZMoviesListService.swift; sourceTree = "<group>"; };
+		3C678ABF2B40B2FE009BB3F3 /* JZRealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZRealmManager.swift; sourceTree = "<group>"; };
+		3C678AC12B40B8B9009BB3F3 /* JZMovieCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZMovieCardView.swift; sourceTree = "<group>"; };
+		3C678AC52B41874E009BB3F3 /* JZMoviesListAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZMoviesListAPIService.swift; sourceTree = "<group>"; };
+		3C678AC72B418769009BB3F3 /* JZMoviesListLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZMoviesListLocalService.swift; sourceTree = "<group>"; };
+		3C678ACD2B418A09009BB3F3 /* ActivityProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityProgressView.swift; sourceTree = "<group>"; };
+		3C678ACF2B418A28009BB3F3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		3C678AD12B418A64009BB3F3 /* HeaderText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderText.swift; sourceTree = "<group>"; };
+		3C678AD32B418AF3009BB3F3 /* JZMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZMovieView.swift; sourceTree = "<group>"; };
+		3C678AD82B418B88009BB3F3 /* ParallaxHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
+		3C678ADB2B419505009BB3F3 /* JZNetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZNetworkReachability.swift; sourceTree = "<group>"; };
+		3C678AE12B419BE9009BB3F3 /* JMoveizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMoveizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C678AE32B419BE9009BB3F3 /* JMoveizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMoveizTests.swift; sourceTree = "<group>"; };
+		3C678AEA2B419CB6009BB3F3 /* JZMockNetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZMockNetworkReachability.swift; sourceTree = "<group>"; };
+		3C678AEC2B419D54009BB3F3 /* Response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
+		3C678AEE2B419DD9009BB3F3 /* JZBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZBaseViewModel.swift; sourceTree = "<group>"; };
+		3C678AF02B419E3E009BB3F3 /* JZErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZErrors.swift; sourceTree = "<group>"; };
+		3C678AF22B41A148009BB3F3 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		3C678AF42B41A4D8009BB3F3 /* JZPagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZPagerViewModel.swift; sourceTree = "<group>"; };
+		3C678AF62B41A62D009BB3F3 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		3C678AF82B41A808009BB3F3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
+		3C7E0BFF2B3EF50700C0004F /* JMoveiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMoveiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7E0C022B3EF50700C0004F /* JMoveizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMoveizApp.swift; sourceTree = "<group>"; };
+		3C7E0C062B3EF50900C0004F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5070A6B52F8CBC8E3FBD36BC /* Pods-JMoveizTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMoveizTests.debug.xcconfig"; path = "Target Support Files/Pods-JMoveizTests/Pods-JMoveizTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC35BA7C4ABB8F8791A9D1BC /* Pods_JMoveiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMoveiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B899FCE5C19C7D801E800FF8 /* Pods-JMoveiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMoveiz.debug.xcconfig"; path = "Target Support Files/Pods-JMoveiz/Pods-JMoveiz.debug.xcconfig"; sourceTree = "<group>"; };
+		C2FC5E9124D1611E9DBF300F /* Pods-JMoveiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMoveiz.release.xcconfig"; path = "Target Support Files/Pods-JMoveiz/Pods-JMoveiz.release.xcconfig"; sourceTree = "<group>"; };
+		E1CD3E13CD9005D553E4A25E /* Pods_JMoveizTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMoveizTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C678ADE2B419BE9009BB3F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED313EE773608D43299EBD7A /* Pods_JMoveizTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7E0BFC2B3EF50700C0004F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA24DE054382A54584AEBE54 /* Pods_JMoveiz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D477FFE081835A373264CD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC35BA7C4ABB8F8791A9D1BC /* Pods_JMoveiz.framework */,
+				E1CD3E13CD9005D553E4A25E /* Pods_JMoveizTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C678A9F2B4074F0009BB3F3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3C678AA02B407507009BB3F3 /* JZMovieAPIs.swift */,
+				3C678AA72B4079B2009BB3F3 /* JZNetworkManager.swift */,
+				3C678ABF2B40B2FE009BB3F3 /* JZRealmManager.swift */,
+				3C678ADB2B419505009BB3F3 /* JZNetworkReachability.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3C678AA22B407575009BB3F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C678AA32B40758C009BB3F3 /* JZPagedObject.swift */,
+				3C678AA52B407821009BB3F3 /* JZMovie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C678AAB2B408410009BB3F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C678AAC2B40842A009BB3F3 /* RealmExtensions.swift */,
+				3C678AAE2B4084C2009BB3F3 /* PublisherExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C678AB02B40887E009BB3F3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3C678AED2B419DC5009BB3F3 /* Base */,
+				3C678AB42B40899B009BB3F3 /* MoviesList */,
+				3C678AC32B418644009BB3F3 /* MovieDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3C678AB12B4088A0009BB3F3 /* WindowGroup */ = {
+			isa = PBXGroup;
+			children = (
+				3C7E0C022B3EF50700C0004F /* JMoveizApp.swift */,
+			);
+			path = WindowGroup;
+			sourceTree = "<group>";
+		};
+		3C678AB32B40894F009BB3F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C678AA92B407A5E009BB3F3 /* Constants.swift */,
+				3C7E0C062B3EF50900C0004F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C678AB42B40899B009BB3F3 /* MoviesList */ = {
+			isa = PBXGroup;
+			children = (
+				3C678AC42B4186CD009BB3F3 /* Service */,
+				3C678ACC2B4189FA009BB3F3 /* Components */,
+				3C678AB72B409115009BB3F3 /* JZMoviesListViewModel.swift */,
+				3C678AB92B4092E8009BB3F3 /* JZMoviesListView.swift */,
+				3C678AC12B40B8B9009BB3F3 /* JZMovieCardView.swift */,
+			);
+			path = MoviesList;
+			sourceTree = "<group>";
+		};
+		3C678AC32B418644009BB3F3 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3C678AD72B418B7A009BB3F3 /* Components */,
+				3C678AD32B418AF3009BB3F3 /* JZMovieView.swift */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		3C678AC42B4186CD009BB3F3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3C678ABD2B40B176009BB3F3 /* JZMoviesListService.swift */,
+				3C678AC52B41874E009BB3F3 /* JZMoviesListAPIService.swift */,
+				3C678AC72B418769009BB3F3 /* JZMoviesListLocalService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3C678ACC2B4189FA009BB3F3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3C678ACD2B418A09009BB3F3 /* ActivityProgressView.swift */,
+				3C678ACF2B418A28009BB3F3 /* SearchView.swift */,
+				3C678AD12B418A64009BB3F3 /* HeaderText.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3C678AD72B418B7A009BB3F3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3C678AD82B418B88009BB3F3 /* ParallaxHeader.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3C678AE22B419BE9009BB3F3 /* JMoveizTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C678AF22B41A148009BB3F3 /* MockURLProtocol.swift */,
+				3C678AE32B419BE9009BB3F3 /* JMoveizTests.swift */,
+				3C678AEA2B419CB6009BB3F3 /* JZMockNetworkReachability.swift */,
+				3C678AF62B41A62D009BB3F3 /* DataExtensions.swift */,
+				3C678AF82B41A808009BB3F3 /* PublisherExtensions.swift */,
+				3C678AEC2B419D54009BB3F3 /* Response.json */,
+			);
+			path = JMoveizTests;
+			sourceTree = "<group>";
+		};
+		3C678AED2B419DC5009BB3F3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3C678AEE2B419DD9009BB3F3 /* JZBaseViewModel.swift */,
+				3C678AF42B41A4D8009BB3F3 /* JZPagerViewModel.swift */,
+				3C678AF02B419E3E009BB3F3 /* JZErrors.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3C7E0BF62B3EF50700C0004F = {
+			isa = PBXGroup;
+			children = (
+				3C7E0C012B3EF50700C0004F /* JMoveiz */,
+				3C678AE22B419BE9009BB3F3 /* JMoveizTests */,
+				3C7E0C002B3EF50700C0004F /* Products */,
+				969FE821E8A44F444F344728 /* Pods */,
+				2D477FFE081835A373264CD2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3C7E0C002B3EF50700C0004F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C7E0BFF2B3EF50700C0004F /* JMoveiz.app */,
+				3C678AE12B419BE9009BB3F3 /* JMoveizTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C7E0C012B3EF50700C0004F /* JMoveiz */ = {
+			isa = PBXGroup;
+			children = (
+				3C66786F2B4219BE000BD8A4 /* Info.plist */,
+				3C678AB12B4088A0009BB3F3 /* WindowGroup */,
+				3C678A9F2B4074F0009BB3F3 /* Network */,
+				3C678AA22B407575009BB3F3 /* Model */,
+				3C678AB02B40887E009BB3F3 /* Scenes */,
+				3C678AAB2B408410009BB3F3 /* Extensions */,
+				3C678AB32B40894F009BB3F3 /* Resources */,
+			);
+			path = JMoveiz;
+			sourceTree = "<group>";
+		};
+		969FE821E8A44F444F344728 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B899FCE5C19C7D801E800FF8 /* Pods-JMoveiz.debug.xcconfig */,
+				C2FC5E9124D1611E9DBF300F /* Pods-JMoveiz.release.xcconfig */,
+				5070A6B52F8CBC8E3FBD36BC /* Pods-JMoveizTests.debug.xcconfig */,
+				354ACD57B78C43B6E4E23C7F /* Pods-JMoveizTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C678AE02B419BE9009BB3F3 /* JMoveizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C678AE72B419BE9009BB3F3 /* Build configuration list for PBXNativeTarget "JMoveizTests" */;
+			buildPhases = (
+				9ED4762CA79361C4B7962FD5 /* [CP] Check Pods Manifest.lock */,
+				3C678ADD2B419BE9009BB3F3 /* Sources */,
+				3C678ADE2B419BE9009BB3F3 /* Frameworks */,
+				3C678ADF2B419BE9009BB3F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C678AE62B419BE9009BB3F3 /* PBXTargetDependency */,
+			);
+			name = JMoveizTests;
+			productName = JMoveizTests;
+			productReference = 3C678AE12B419BE9009BB3F3 /* JMoveizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C7E0BFE2B3EF50700C0004F /* JMoveiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7E0C0D2B3EF50900C0004F /* Build configuration list for PBXNativeTarget "JMoveiz" */;
+			buildPhases = (
+				194F1C392099A06E40FDDB0E /* [CP] Check Pods Manifest.lock */,
+				3C7E0BFB2B3EF50700C0004F /* Sources */,
+				3C7E0BFC2B3EF50700C0004F /* Frameworks */,
+				3C7E0BFD2B3EF50700C0004F /* Resources */,
+				C41F2D313BD0C962455B0379 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMoveiz;
+			productName = JMoveiz;
+			productReference = 3C7E0BFF2B3EF50700C0004F /* JMoveiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C7E0BF72B3EF50700C0004F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3C678AE02B419BE9009BB3F3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3C7E0BFE2B3EF50700C0004F;
+					};
+					3C7E0BFE2B3EF50700C0004F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 3C7E0BFA2B3EF50700C0004F /* Build configuration list for PBXProject "JMoveiz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C7E0BF62B3EF50700C0004F;
+			productRefGroup = 3C7E0C002B3EF50700C0004F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C7E0BFE2B3EF50700C0004F /* JMoveiz */,
+				3C678AE02B419BE9009BB3F3 /* JMoveizTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C678ADF2B419BE9009BB3F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C678AFA2B41AAAD009BB3F3 /* Response.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7E0BFD2B3EF50700C0004F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7E0C072B3EF50900C0004F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		194F1C392099A06E40FDDB0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JMoveiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ED4762CA79361C4B7962FD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JMoveizTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C41F2D313BD0C962455B0379 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JMoveiz/Pods-JMoveiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JMoveiz/Pods-JMoveiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JMoveiz/Pods-JMoveiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C678ADD2B419BE9009BB3F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C678AF32B41A148009BB3F3 /* MockURLProtocol.swift in Sources */,
+				3C678AF72B41A62D009BB3F3 /* DataExtensions.swift in Sources */,
+				3C678AE42B419BE9009BB3F3 /* JMoveizTests.swift in Sources */,
+				3C678AEB2B419CB6009BB3F3 /* JZMockNetworkReachability.swift in Sources */,
+				3C678AF92B41A808009BB3F3 /* PublisherExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7E0BFB2B3EF50700C0004F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C678AAD2B40842A009BB3F3 /* RealmExtensions.swift in Sources */,
+				3C678AA12B407507009BB3F3 /* JZMovieAPIs.swift in Sources */,
+				3C678ACE2B418A09009BB3F3 /* ActivityProgressView.swift in Sources */,
+				3C678AA42B40758C009BB3F3 /* JZPagedObject.swift in Sources */,
+				3C678AA62B407821009BB3F3 /* JZMovie.swift in Sources */,
+				3C678AC82B418769009BB3F3 /* JZMoviesListLocalService.swift in Sources */,
+				3C678AD02B418A28009BB3F3 /* SearchView.swift in Sources */,
+				3C678AEF2B419DD9009BB3F3 /* JZBaseViewModel.swift in Sources */,
+				3C678AF52B41A4D8009BB3F3 /* JZPagerViewModel.swift in Sources */,
+				3C678ABA2B4092E8009BB3F3 /* JZMoviesListView.swift in Sources */,
+				3C678AC62B41874E009BB3F3 /* JZMoviesListAPIService.swift in Sources */,
+				3C678AD92B418B88009BB3F3 /* ParallaxHeader.swift in Sources */,
+				3C678AD42B418AF3009BB3F3 /* JZMovieView.swift in Sources */,
+				3C678AAA2B407A5E009BB3F3 /* Constants.swift in Sources */,
+				3C678AD22B418A64009BB3F3 /* HeaderText.swift in Sources */,
+				3C678AA82B4079B2009BB3F3 /* JZNetworkManager.swift in Sources */,
+				3C678AAF2B4084C2009BB3F3 /* PublisherExtension.swift in Sources */,
+				3C678AC22B40B8B9009BB3F3 /* JZMovieCardView.swift in Sources */,
+				3C678AF12B419E3E009BB3F3 /* JZErrors.swift in Sources */,
+				3C678AC02B40B2FE009BB3F3 /* JZRealmManager.swift in Sources */,
+				3C678ADC2B419505009BB3F3 /* JZNetworkReachability.swift in Sources */,
+				3C7E0C032B3EF50700C0004F /* JMoveizApp.swift in Sources */,
+				3C678ABE2B40B176009BB3F3 /* JZMoviesListService.swift in Sources */,
+				3C678AB82B409115009BB3F3 /* JZMoviesListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C678AE62B419BE9009BB3F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C7E0BFE2B3EF50700C0004F /* JMoveiz */;
+			targetProxy = 3C678AE52B419BE9009BB3F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3C678AE82B419BE9009BB3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5070A6B52F8CBC8E3FBD36BC /* Pods-JMoveizTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LU6JY6X6J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jahez.moveiz.JMoveizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JMoveiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JMoveiz";
+			};
+			name = Debug;
+		};
+		3C678AE92B419BE9009BB3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 354ACD57B78C43B6E4E23C7F /* Pods-JMoveizTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LU6JY6X6J6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jahez.moveiz.JMoveizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JMoveiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JMoveiz";
+			};
+			name = Release;
+		};
+		3C7E0C0B2B3EF50900C0004F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C7E0C0C2B3EF50900C0004F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C7E0C0E2B3EF50900C0004F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B899FCE5C19C7D801E800FF8 /* Pods-JMoveiz.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JMoveiz/Preview Content\"";
+				DEVELOPMENT_TEAM = LU6JY6X6J6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JMoveiz/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jahez.moveiz.JMoveiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3C7E0C0F2B3EF50900C0004F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2FC5E9124D1611E9DBF300F /* Pods-JMoveiz.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JMoveiz/Preview Content\"";
+				DEVELOPMENT_TEAM = LU6JY6X6J6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JMoveiz/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jahez.moveiz.JMoveiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C678AE72B419BE9009BB3F3 /* Build configuration list for PBXNativeTarget "JMoveizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C678AE82B419BE9009BB3F3 /* Debug */,
+				3C678AE92B419BE9009BB3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C7E0BFA2B3EF50700C0004F /* Build configuration list for PBXProject "JMoveiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7E0C0B2B3EF50900C0004F /* Debug */,
+				3C7E0C0C2B3EF50900C0004F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C7E0C0D2B3EF50900C0004F /* Build configuration list for PBXNativeTarget "JMoveiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7E0C0E2B3EF50900C0004F /* Debug */,
+				3C7E0C0F2B3EF50900C0004F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C7E0BF72B3EF50700C0004F /* Project object */;
+}
